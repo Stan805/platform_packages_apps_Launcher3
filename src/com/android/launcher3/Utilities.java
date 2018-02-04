@@ -1000,12 +1000,7 @@ public final class Utilities {
         }
     }
 
-    /**
-     * Returns whether mouse interaction changes intended for the desktop form factor should be
-     * enabled.
-     */
-    public static boolean shouldEnableMouseInteractionChanges(Context context) {
-        return enableMouseInteractionChanges() && context.getResources().getBoolean(
-                R.bool.desktop_form_factor);
+    public static boolean isWorkspaceEditAllowed(Context context) {
+        return !LauncherPrefs.WORKSPACE_LOCK.get(context);
     }
 }
