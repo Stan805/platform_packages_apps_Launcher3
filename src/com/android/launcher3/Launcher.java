@@ -99,6 +99,7 @@ import static com.android.launcher3.states.RotationHelper.REQUEST_NONE;
 import static com.android.launcher3.testing.shared.TestProtocol.LAUNCHER_ACTIVITY_STOPPED_MESSAGE;
 import static com.android.launcher3.util.ItemInfoMatcher.forFolderMatch;
 import static com.android.launcher3.util.SettingsCache.TOUCHPAD_NATURAL_SCROLLING;
+import static com.android.launcher3.LauncherPrefs.DRAWER_OPEN_KEYBOARD;
 
 import android.animation.Animator;
 import android.animation.AnimatorSet;
@@ -1174,6 +1175,8 @@ public class Launcher extends StatefulActivity<LauncherState>
             getAppsView().reset(false);
             getAllAppsExitEvent().ifPresent(getStatsLogManager().logger()::log);
             mAllAppsSessionLogId = null;
+        } else if (ALL_APPS.equals(state) && DRAWER_OPEN_KEYBOARD.get(this)) {
+            getAppsView().getSearchUiManager().focusSearchField();
         }
         setTitle(state);
     }

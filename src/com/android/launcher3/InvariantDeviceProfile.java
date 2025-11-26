@@ -34,6 +34,7 @@ import static com.android.launcher3.util.DisplayController.CHANGE_SUPPORTED_BOUN
 import static com.android.launcher3.util.DisplayController.CHANGE_TASKBAR_PINNING;
 import static com.android.launcher3.util.Executors.MAIN_EXECUTOR;
 import static com.android.launcher3.LauncherPrefs.ALLAPPS_THEMED_ICONS;
+import static com.android.launcher3.LauncherPrefs.DRAWER_OPEN_KEYBOARD;
 
 import android.content.Context;
 import android.content.Intent;
@@ -307,7 +308,8 @@ public class InvariantDeviceProfile {
             } else if (ENABLE_TWOLINE_ALLAPPS_TOGGLE.getSharedPrefKey().equals(key)
                     && enableTwoLinesInAllApps != prefs.get(ENABLE_TWOLINE_ALLAPPS_TOGGLE)) {
                 onConfigChanged(context);
-            } else if (ALLAPPS_THEMED_ICONS.getSharedPrefKey().equals(key)) {
+            } else if (ALLAPPS_THEMED_ICONS.getSharedPrefKey().equals(key)||
+                    DRAWER_OPEN_KEYBOARD.getSharedPrefKey().equals(key)) {
                 onConfigChanged(context);
             }
         };
