@@ -1003,4 +1003,9 @@ public final class Utilities {
     public static boolean isWorkspaceEditAllowed(Context context) {
         return !LauncherPrefs.WORKSPACE_LOCK.get(context);
     }
+
+    public static boolean shouldEnableMouseInteractionChanges(Context context) {
+        return enableMouseInteractionChanges() && context.getResources().getBoolean(
+                R.bool.desktop_form_factor);
+    }
 }
