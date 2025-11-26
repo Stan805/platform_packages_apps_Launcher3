@@ -82,4 +82,6 @@
     <color name="materialColorSecondaryFixedDim">@color/system_secondary_fixed_dim</color>
     <color name="materialColorTertiaryFixed">@color/system_tertiary_fixed</color>
     <color name="materialColorTertiaryFixedDim">@color/system_tertiary_fixed_dim</color>
+    <color name="search_bar_ripple_color">?android:attr/colorAccent</color>
+    <color name="search_icon_cube_color">#FFFFFF</color>
 </resources>
