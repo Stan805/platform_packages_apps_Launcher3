@@ -112,7 +112,7 @@
     <dimen name="all_apps_search_bar_field_height">52dp</dimen>
     <!-- all_apps_search_bar_field_height / 2 -->
     <dimen name="all_apps_search_bar_content_overlap">16dp</dimen>
-    <dimen name="all_apps_search_bar_bottom_padding">30dp</dimen>
+    <dimen name="all_apps_search_bar_bottom_padding">40dp</dimen>
     <dimen name="all_apps_empty_search_message_top_offset">40dp</dimen>
     <dimen name="all_apps_search_top_row_extra_height">2dp</dimen>
     <dimen name="all_apps_search_bar_margin_side">20dp</dimen>
