@@ -21,7 +21,7 @@
     
     android:layout_marginStart="@dimen/all_apps_search_bar_margin_side"
     android:layout_marginEnd="@dimen/all_apps_search_bar_margin_side" 
-    android:paddingStart="20dp"
+    android:paddingStart="18dp"
     android:paddingEnd="20dp"
 
     android:gravity="center_vertical"
@@ -31,7 +31,7 @@
     android:background="@drawable/bg_all_apps_searchbox"
     
     android:drawableStart="@drawable/ic_search_cube"
-    android:drawablePadding="12dp"
+    android:drawablePadding="10dp"
     
     android:imeOptions="actionSearch|flagNoExtractUi"
     android:inputType="text|textNoSuggestions|textCapWords"
